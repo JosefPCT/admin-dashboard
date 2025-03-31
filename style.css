@@ -48,4 +48,38 @@
 
   /* Reset ends here*/
 
-  
+  /* Making the page a grid
+  2x2 grid
+  */
+
+ .body-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+    "dashboard header"
+    "dashboard main";
+ }
+
+ .dashboard{
+    grid-area: dashboard;
+
+    border: 1px solid red;
+ }
+
+ .header{
+    grid-area: header;
+
+    border: 1px solid black;
+ }
+
+
+ .header > div{
+    display: flex;
+ }
+
+ .main{
+    grid-area: main;
+
+    border: 1px solid green;
+ }
