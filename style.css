@@ -48,7 +48,7 @@
 
   /* Reset ends here*/
 
-  /* Making the page a grid
+  /* Making the page layout
   2x2 grid
   */
 
@@ -82,4 +82,36 @@
     grid-area: main;
 
     border: 1px solid green;
+ }
+
+ .main {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "user-projects announcements"
+    "user-projects trending";
+ }
+
+ .user-projects{
+    grid-area: user-projects;
+
+    display: grid;
+ }
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards .card{
+    border: 1px solid red;
+}
+
+ .announcements{
+    grid-area: announcements;
+ }
+
+ .trending{
+    grid-area: trending;
  }
