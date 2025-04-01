@@ -6,6 +6,7 @@
   /* 2. Remove default margin */
   * {
     margin: 0;
+    font-family: "Roboto";
   }
   
   body {
@@ -48,70 +49,89 @@
 
   /* Reset ends here*/
 
-  /* Making the page layout
+/* Custom Font */
+@font-face {
+  font-family: 'Roboto';
+  src: url('font-roboto/Roboto-Regular.woff2') format('woff2'),
+      url('font-roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+  /* 
+  Making the page layout
   2x2 grid
   */
 
- .body-container{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
-    grid-template-areas:
-    "dashboard header"
-    "dashboard main";
- }
+.body-container{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+  "dashboard header"
+  "dashboard main";
+}
 
- .dashboard{
-    grid-area: dashboard;
+.dashboard{
+  grid-area: dashboard;
 
-    border: 1px solid red;
- }
+  border: 1px solid red;
+}
 
- .header{
-    grid-area: header;
+.header{
+  grid-area: header;
 
-    border: 1px solid black;
- }
+  border: 1px solid black;
+}
 
 
- .header > div{
-    display: flex;
- }
+.header > div{
+  display: flex;
+}
 
- .main{
-    grid-area: main;
+.main{
+  grid-area: main;
 
-    border: 1px solid green;
- }
+  border: 1px solid green;
+}
 
- .main {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "user-projects announcements"
-    "user-projects trending";
- }
+.main {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "user-projects announcements"
+  "user-projects trending";
+}
 
- .user-projects{
-    grid-area: user-projects;
+.user-projects{
+  grid-area: user-projects;
 
-    display: grid;
- }
+  display: grid;
+}
 
 .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .cards .card{
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
- .announcements{
-    grid-area: announcements;
- }
+.announcements{
+  grid-area: announcements;
+}
 
- .trending{
-    grid-area: trending;
- }
+.trending{
+  grid-area: trending;
+}
+
+/* 
+Styling
+*/
+
+ul{
+  list-style: none;
+}
