@@ -76,8 +76,17 @@
 .dashboard{
   grid-area: dashboard;
 
+  background-color:aqua;
+
   border: 1px solid red;
 }
+
+.nav > ul > li, .nav-2 > ul > li{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+
 
 .header{
   grid-area: header;
@@ -134,4 +143,9 @@ Styling
 
 ul{
   list-style: none;
+}
+
+.dashboard svg {
+  fill: white;
+  width: 100%;
 }
