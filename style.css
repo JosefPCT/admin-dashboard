@@ -65,6 +65,7 @@
   */
 
 .body-container{
+
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
@@ -245,4 +246,9 @@ ul{
 
 .push-away{
   margin-bottom: auto;
+}
+
+a{
+  color: white;
+  text-decoration: none;
 }

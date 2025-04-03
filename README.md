@@ -12,4 +12,4 @@ https://pictogrammers.com/library/mdi/
 - Add border / background for each grid
 - Make the cards in your project section responsive
 
-- made dashboard into flex items, might need to turn it into a grid, so it  can change size as well
+- work on header section
