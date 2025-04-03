@@ -74,6 +74,8 @@
   
 }
 
+/* Dashboard Section */
+
 .dashboard{
   grid-area: dashboard;
   background-color:aqua;
@@ -87,6 +89,11 @@
   justify-content: flex-start;
   padding: 15px;
   gap: 15px;
+
+}
+
+.logo-container svg, .logo-container h2{
+  flex-shrink: 1;
 }
 
 .navigation-container{
@@ -114,6 +121,7 @@
  margin-bottom: auto;
 }
 
+/* Header Section */
 
 .header{
   grid-area: header;
