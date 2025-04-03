@@ -71,20 +71,47 @@
   grid-template-areas:
   "dashboard header"
   "dashboard main";
+  
 }
 
 .dashboard{
   grid-area: dashboard;
-
   background-color:aqua;
-
   border: 1px solid red;
+
 }
 
-.nav > ul > li, .nav-2 > ul > li{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  gap: 15px;
+}
 
+.navigation-container{
+  background-color: purple;
+  
+}
+
+.navigation-container ul{
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0;
+  padding-left: 30px;
+}
+
+.navigation-container ul > li{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.navigation-container ul > li.push-away{
+ margin-bottom: auto;
 }
 
 
@@ -145,7 +172,24 @@ ul{
   list-style: none;
 }
 
+.dashboard {
+  color: white;
+}
+
 .dashboard svg {
   fill: white;
-  width: 100%;
+  max-width: 30px;
+  min-width: 30px;
+}
+
+.logo-container svg{
+  min-width: 60px;
+}
+
+.logo-container h2{
+  font-size: 2em;
+}
+
+.push-away{
+  margin-bottom: auto;
 }
