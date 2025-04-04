@@ -148,7 +148,7 @@ a{
   "dashboard header"
   "dashboard main";
   
-  height: 120vh;
+  height: 100vh;
 }
 
 /* Dashboard Section */
@@ -379,7 +379,7 @@ button{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   height: 550px;
-  gap: 10px 10px;
+  gap: 10px 2px;
 }
 
 
@@ -388,6 +388,7 @@ button{
  /* border: 1px solid green; */
  padding-top: 0px;
  padding-bottom: 0px;
+ padding-left: 15px
  
 }
 .card {
