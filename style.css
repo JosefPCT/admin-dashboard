@@ -128,6 +128,10 @@ a{
   font-weight: bold;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 
 
   /* 
@@ -263,8 +267,8 @@ button{
 
 .header{
   grid-area: header;
+  box-shadow: 5px 5px #ccc;
 
-  border: 1px solid black;
 
 }
 
@@ -350,6 +354,11 @@ button{
   grid-area: user-projects;
 
   display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.user-projects .title{ 
+ align-self: center;
 }
 
 .cards{
