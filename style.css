@@ -148,6 +148,7 @@ a{
   "dashboard header"
   "dashboard main";
   
+  height: 100vh;
 }
 
 /* Dashboard Section */
@@ -155,7 +156,7 @@ a{
 .dashboard{
   grid-area: dashboard;
   background-color:#429ef5;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 
@@ -338,7 +339,7 @@ button{
 .main{
   grid-area: main;
 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .main {
@@ -348,6 +349,13 @@ button{
   grid-template-areas: 
   "user-projects announcements"
   "user-projects trending";
+  height: 100%;
+  gap: 15px;
+  background-color: rgba(50, 90, 90, 0.1)
+}
+
+.main > div{
+  border: 1px solid black;
 }
 
 .user-projects{
@@ -363,17 +371,68 @@ button{
 
 .cards{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .cards .card{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+
+/* Main - Announcements Section*/
 
 .announcements{
   grid-area: announcements;
+
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
+.announcements > div:first-child{
+  /* border: 1px solid green; */
+  justify-self: start;
+}
+
+.announcement-cards{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  display: grid;
+  padding: 25px;
+  gap: 25px;
+}
+
+.announcement-cards>div{
+  padding-bottom: 15px;
+  border-bottom: 1px solid green;
+}
+
+.announcement-cards p{
+  color: grey;
+
+}
+
+.announcement-cards>div>div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 200px;
+  height: 100px;
+
+
+  
+}
+
+.announcement-cards>div:last-child{
+  border-bottom: none;
+}
+
+
+/* Main - Trending Section */
 .trending{
   grid-area: trending;
 }
