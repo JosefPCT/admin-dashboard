@@ -143,7 +143,7 @@ a{
 
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: .1fr 5fr;
+  grid-template-rows: 140px 2fr;
   grid-template-areas:
   "dashboard header"
   "dashboard main";
@@ -239,7 +239,7 @@ input{
 
 img{
   border-radius: 50%;
-  width: 60px;
+  width: 40px;
 }
 
 
@@ -270,7 +270,7 @@ button{
   grid-area: header;
   box-shadow: 5px 5px #ccc;
 
-
+  padding: 15px;
 }
 
 .main-header{
@@ -278,7 +278,7 @@ button{
   grid-template-columns: 1fr .5fr;
   align-items: center;
   justify-items: center;
-  
+  padding-bottom: 10px;
 }
 
 .searchbox{
@@ -286,8 +286,6 @@ button{
   grid-template-columns: 30px 1fr;
   width: 100%;
   gap: 15px;
-  padding: 30px;
-  
 }
 
 .searchbox > *{
@@ -300,8 +298,7 @@ button{
   align-items: center;
   justify-items: center;
   gap: 5px;
-  padding: 30px;
-  
+
 }
 
 .sub-header{
@@ -311,7 +308,7 @@ button{
 
 .user-info{
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 50px 1fr;
   align-items: center;
   padding: 30px;
   padding-top: 0;
@@ -344,7 +341,7 @@ button{
 
 .main {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   "user-projects announcements"
@@ -386,7 +383,7 @@ button{
   display: grid;
   grid-template-rows: 50px 1fr;
   align-items: center;
-  justify-items: center;
+  
 }
 
 .announcements > div:first-child{
@@ -396,17 +393,19 @@ button{
 
 .announcement-cards{
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
+  
+  width: 95%;
   background-color: white;
 
   display: grid;
   padding: 25px;
   gap: 25px;
+  padding-bottom: 0px;
+
 }
 
 .announcement-cards>div{
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid green;
 }
 
@@ -420,10 +419,8 @@ button{
   overflow: hidden;
   white-space: nowrap;
 
-  width: 200px;
-  height: 100px;
-
-
+  width: 300px;
+  height: 50px
   
 }
 
@@ -435,6 +432,41 @@ button{
 /* Main - Trending Section */
 .trending{
   grid-area: trending;
+
+  display: grid;
+  grid-template-rows: 30px 1fr;
+
+ 
+}
+
+.trending-cards{
+  display: grid;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 95%;
+  height: 85%;
+  /* border: 1px solid red; */
+}
+
+
+.trending-cards div{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 20px;
+  /* border: 1px solid yellow; */
+  height: 70px;
+  column-gap: 10px;
+  
+}
+
+.trending-cards div > *{
+  /* border: 1px solid green; */
+}
+
+.trending-cards>div img{
+  width: 50px;
+  grid-row: 1/3;
 }
 
 
