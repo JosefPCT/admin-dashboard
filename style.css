@@ -95,7 +95,7 @@ svg {
 }
 
 .svg-container{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 
@@ -148,7 +148,7 @@ a{
   "dashboard header"
   "dashboard main";
   
-  height: 100vh;
+  height: 120vh;
 }
 
 /* Dashboard Section */
@@ -360,7 +360,7 @@ button{
 }
 
 .main > div{
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .user-projects{
@@ -372,31 +372,57 @@ button{
 
 .user-projects .title{ 
  align-self: center;
+ padding-left: 15px;
 }
 
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  height: 550px;
+  gap: 10px 10px;
+}
+
+
+.card-container{
+ padding: 50px;
+ /* border: 1px solid green; */
+ padding-top: 0px;
+ padding-bottom: 0px;
+ 
+}
+.card {
+  border-left: 5px solid orange;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px grey;
+  padding: 15px;
 }
 
 .card > *{
-  border: 1px solid black;
+ /*  border: 1px solid black; */
+  
+  
 }
 
-.cards .card{
+.card > div:nth-child(2){
+  min-height: 140px;
+}
+
+/* .cards .card{
   border: 1px solid red;
   display: grid;
-}
+} */
 
-.card > ul{
+.card ul{
   display: grid;
   grid-template-columns: 30px 30px 30px;
   align-items: center;
   justify-content: end;
+  gap: 25px;
 }
 
 .card > ul > *{
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 /* Main - Announcements Section*/
